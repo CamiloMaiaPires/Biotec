@@ -5,25 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <link rel="stylesheet" href="{{asset('site/bootstrap.css')}}">
+    <style>
+
+      body {
+      background-image: url("{{asset('img/fundo.png')}}");
+      background-color: #cccccc;
+      }
+
+      .titulo, .span12, .link_footer{
+        color:#fff;
+      }
+
+      .link_footer:hover {color: #fff; text-decoration:underline;}
+  
+    </style>
     
     <title>Biotecnologia - UNIFESP</title>
   </head>
   <body>
-    <header>
-      <div class="container">
-        <div class="row">
-          <div class="col">
-          
-          </div>
-          <div class="col titulo">
-            <h4>UNIVERSIDADE FEDERAL DE SÃO PAULO</h4>
-            <h2>BIOTECNOLOGIA</h2>
-          </div>
-          <div class="col">
-          </div>
-        </div>
-      </div>    
-    </header>
+
+    <div class="container" style="text-align: center;">
+          <h2 class="titulo" >UNIVERSIDADE FEDERAL DE SÃO PAULO</h2>
+          <h1 class="titulo" style="display: inline">Biotecnologia</h1>   
+    </div>
+    
+
+
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="#"></a>
       <img src="../img/logobiotec_transparente.png" width="100" height="95"/>
@@ -89,47 +96,72 @@
       </div>
     </nav>
 
-    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-        </ol>
     
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="{{asset('img/1.jpg')}}" height="600px" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="{{asset('img/1.jpg')}}" height="600px;" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="{{asset('img/1.jpg')}}" height="600px;" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="{{asset('img/1.jpg')}}" height="600px;" class="d-block w-100" alt="...">
             </div>
           </div>
-          <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        
+      </div>
+      <div class="container-fluid" style="height: 1000px;background-color:#fff;">
+      </div>
+    
+      <div class="span12" style="text-align: left;">
+       
+          <div class="span12" style="text-align: left;">
+            <div class="container" style="margin-top: 15px;">
+              
+              <div class="row">
+                <div class="col">
+                  <h5>links Rápidos</h5>
+                  <ul>
+                    <li><a href="" target="_blank" class="link_footer">Vagas e Empregos</a></li>
+                    <li><a href="" target="_blank"class="link_footer">Mapa</a></li>
+                    <li><a href="" target="_blank" class="link_footer">Contato</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                 <h5>Informações sobre</h5>
+                 <ul>
+                  <li><a href="" target="_blank" class="link_footer">UNIFESP</a></li>
+                  <li><a href="" target="_blank"class="link_footer">UNIFESP SJC</a></li>
+                  <li><a href="" target="_blank" class="link_footer">Como entrar em biotecnologia</a></li>
+                  <li><a href="" target="_blank" class="link_footer">BCT - Bacharel interdisciplinar em ciência e tecnologia</a></li>
+                </ul>
+                </div>
+                <div class="col" style="text-align: center">
+                  <img src="{{asset('img/footer.png')}}" height="60px;">
+                  <img src="{{asset('img/ict_logo.png')}}" height="60px;">
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-            </div>
+            <div class="span12" style="margin-top: 10px; text-align: center;">© 2020 Universidade Federal de São Paulo - Unifesp <br>
           </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
       </div>
       
-      <script src="{{asset('site/jquery.js')}}"></script>
-      <script src="{{asset('site/bootstrap.js')}}"></script>
+    <script src="{{asset('site/jquery.js')}}"></script>
+    <script src="{{asset('site/bootstrap.js')}}"></script>
   </body>
 </html>
