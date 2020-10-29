@@ -12,7 +12,7 @@
       background-color: #cccccc;
       }
 
-      .titulo, .span12, .link_footer{
+      .titulo, .span12, .link_footer, .footer{
         color:#fff;
       }
 
@@ -25,13 +25,23 @@
   <body>
 
     <div class="container" style="text-align: center;">
-          <h2 class="titulo" >UNIVERSIDADE FEDERAL DE SÃO PAULO</h2>
-          <h1 class="titulo" style="display: inline">Biotecnologia</h1>   
+          
+    </div>
+
+
+    <div class="row justify-content-end">
+      <div class="col-4" style="text-align: center">
+        <h2 class="titulo" >UNIVERSIDADE FEDERAL DE SÃO PAULO</h2>
+        <h1 class="titulo" style="display: inline">Biotecnologia</h1>   
+      </div>
+      <div class="col-4" style="text-align: right; margin-top:10px; margin-right:10px" >
+        <img src="{{asset('img/logo_branco.svg')}}" height="60px;">
+      </div>
     </div>
     
 
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="margin-top: 10px;">
       <a class="navbar-brand" href="#"></a>
       <img src="../img/logobiotec_transparente.png" width="100" height="95"/>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -134,25 +144,37 @@
               
               <div class="row">
                 <div class="col">
-                  <h5>links Rápidos</h5>
-                  <ul>
-                    <li><a href="" target="_blank" class="link_footer">Vagas e Empregos</a></li>
-                    <li><a href="" target="_blank"class="link_footer">Mapa</a></li>
-                    <li><a href="" target="_blank" class="link_footer">Contato</a></li>
-                  </ul>
+                  <h4>links Rápidos</h4>
+                  
+                    <a href="" target="_blank" class="link_footer">Vagas e Empregos</a><br>
+                    <a href="" target="_blank"class="link_footer">Mapa</a><br>
+                    <a href="" target="_blank" class="link_footer">Contato</a><br>
+                  
                 </div>
                 <div class="col">
-                 <h5>Informações sobre</h5>
-                 <ul>
-                  <li><a href="" target="_blank" class="link_footer">UNIFESP</a></li>
-                  <li><a href="" target="_blank"class="link_footer">UNIFESP SJC</a></li>
-                  <li><a href="" target="_blank" class="link_footer">Como entrar em biotecnologia</a></li>
-                  <li><a href="" target="_blank" class="link_footer">BCT - Bacharel interdisciplinar em ciência e tecnologia</a></li>
-                </ul>
+                 <h4>Informações sobre</h4>
+                
+                  <a href="" target="_blank" class="link_footer">UNIFESP</a><br>
+                  <a href="" target="_blank"class="link_footer">UNIFESP SJC</a><br>
+                  <a href="" target="_blank" class="link_footer">Como entrar em biotecnologia</a><br>
+                  <a href="" target="_blank" class="link_footer">BCT - Bacharel interdisciplinar em ciência e tecnologia</a><br>
+                
                 </div>
                 <div class="col" style="text-align: center">
-                  <img src="{{asset('img/footer.png')}}" height="60px;">
-                  <img src="{{asset('img/ict_logo.png')}}" height="60px;">
+
+                  <div class="row" style="vertical-align: middle">
+
+                    <img src="{{asset('img/footer.png')}}" style="vertical-align: middle" height="60px;">
+                   
+
+                  </div>
+                  <div class="row"> <pre class="footer">
+                    ICT - instituto de ciência e tecnologia
+                    UNIFESP São José dos Campos
+                    Rua Talim, 330, São José dos Campos,
+                    São Paulo, CEP 12231-280
+                    Fones
+                    </pre></div>
                 </div>
               </div>
             </div>
