@@ -13,8 +13,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('/', 'App\Http\Controllers\WelcomeController@welcome');
+
+Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+    return view('dashboard');
+})->name('dashboard');
+
+Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::group(['middleware'=>'auth:sanctum'], function(){
+    Route::get('/news', 'App\Http\Controllers\NewsController@form'); //rota para o metodo form no NewsController
+    Route::post('/store', 'App\Http\Controllers\NewsController@store')->name('store'); //setando o nome da rota para envio, independentemente da url,
+});

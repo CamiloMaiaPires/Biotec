@@ -18,12 +18,14 @@ class CreateNewsTable extends Migration
             $table->unsignedBigInteger('admin_id');
             $table->string('author');
             $table->string('title');
+            $table->string('subtitle');
             $table->string('text', 10000);
-            $table->date('date');
-            $table->bigInteger('accesses');
+            $table->text('date');
+            $table->string('slug');
             $table->timestamps();
+            $table->string('img');
 
-            $table->foreign('admin_id')->references('id')->on('admins')->onDelete('cascade');
+            $table->foreign('admin_id')->references('id')->on('users')->onDelete('cascade');
         });
     }
 
