@@ -25,5 +25,10 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::group(['middleware'=>'auth:sanctum'], function(){
     Route::get('/news', 'App\Http\Controllers\NewsController@form'); //rota para o metodo form no NewsController
-    Route::post('/store', 'App\Http\Controllers\NewsController@store')->name('store'); //setando o nome da rota para envio, independentemente da url,
+    Route::post('/store', 'App\Http\Controllers\NewsController@store')->name('store'); //setando o nome da rota para store, independentemente da url,
+});
+
+Route::group(['middleware'=>'auth:sanctum'], function(){
+    Route::get('/professores', 'App\Http\Controllers\TeachersController@form');
+    Route::post('/store_professores', 'App\Http\Controllers\TeachersController@store')->name('store_professores'); 
 });
