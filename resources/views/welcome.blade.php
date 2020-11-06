@@ -7,37 +7,53 @@
     <link rel="stylesheet" href="{{asset('site/bootstrap.css')}}">
     <style>
       body {
-      background-image: url("{{asset('img/fundo.png')}}");
-      background-color: #cccccc;
+        background-image: url("{{asset('img/fundo.png')}}");
+        font-family: 'Roboto', sans-serif;
       }
+
+      .slide{
+        height: 500px;
+      }
+
+      .titulo{
+        color: aliceblue;
+      }
+
+      @media (min-width:992px) {
+        .navbar-brand{
+            transform: translateY(50%);
+        }
+      }
+
       .titulo, .span12, .link_footer, .footer{
         color:#fff;
       }
       .link_footer:hover {color: #fff; text-decoration:underline;}
-  
     </style>
     
     <title>Biotecnologia - UNIFESP</title>
   </head>
   <body>
 
-    <div class="container" style="text-align: center;">
-          
-    </div>
-
-
-    <div class="row justify-content-end">
-      <div class="col-4" style="text-align: center">
-        <h2 class="titulo" >UNIVERSIDADE FEDERAL DE SÃO PAULO</h2>
-        <h1 class="titulo" style="display: inline">Biotecnologia</h1>   
+    <div class="container-fluid">
+    <div class="row align-items-center">
+      <div class="col">
       </div>
-      <div class="col-4" style="text-align: right; margin-top:10px; margin-right:10px" >
+      <div class="col-8 d-none d-lg-block" style="text-align: center; margin-top: 30px;">
+        <h2 class="titulo " >UNIVERSIDADE FEDERAL DE SÃO PAULO</h2>
+        <h1 class="titulo" style="display: inline">Biotecnologia</h1>
+      </div>
+
+      <div class="col d-none d-lg-block" style="text-align: right; margin-top:10px; margin-right:10px" >
         <img src="{{asset('img/logo_branco.svg')}}" height="60px;">
       </div>
     </div>
-    
 
+    <div class="d-none d-sm-block d-md-block d-lg-none" style="text-align: center">
+      <h1 class="titulo" style="display: inline">Biotecnologia</h1>
+    </div>
 
+    </div>
     <nav class="navbar navbar-expand-lg navbar-light bg-light" style="margin-top: 10px;">
       <a class="navbar-brand" href="#"></a>
       <img src="../img/logobiotec_transparente.png" width="100" height="95"/>
@@ -170,8 +186,9 @@
                     </pre></div>
                 </div>
               </div>
+              <div class="row" style="margin-top: 10px; text-align: center;">© 2020 Universidade Federal de São Paulo - Unifesp <br>
             </div>
-            <div class="span12" style="margin-top: 10px; text-align: center;">© 2020 Universidade Federal de São Paulo - Unifesp <br>
+            
           </div>
         </div>
       </div>
