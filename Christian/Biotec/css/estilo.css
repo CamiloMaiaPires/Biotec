@@ -1,0 +1,89 @@
+.selector-for-some-widget {
+  	box-sizing: content-box;
+}
+
+/* Body */
+body {
+	background-image: url("../img/fundo.png");
+}
+
+/* Titulos */
+.titulo {
+	margin-top: 2%;
+	margin-bottom: 3%;
+	text-align: center;
+	color: white;
+}
+
+.titulo h2{
+	font-weight: bold;
+}
+
+.titulo h4 {
+	font-style: italic;
+	font-size: 18pt;
+}
+
+h5 {
+	font-weight: normal;
+}
+
+/* Container principal */
+#principal {
+	margin-top: 1%;
+	width: 100%;
+	height: 500px;
+	background-color: white;
+}
+
+/* Carousel */
+#carouselExampleIndicators {
+	margin-top: 1%;
+	border: 1px solid black;
+}
+
+/*Criar post */
+#criar_post h4 {
+	text-align: center;
+	margin-bottom: 2%;
+}
+
+#criar_post ul li{
+	color: gray;
+}
+
+#criar_post {
+	border-radius: 8px;
+	background-color: white;
+	height: auto;
+	width: 100%;
+	margin-top: 2%;
+	padding: 10px;
+}
+
+#criar_post form {
+	margin-top: 2%;
+	margin-left: 20%;
+	margin-bottom: 2%;
+	width: 60%;
+	border: 1px solid gray;
+	border-radius: 5px;
+	padding: 10px;
+}
+
+
+
+/* Footer */
+#rodape {
+	margin-top: 1%;
+	margin-bottom: 1%;
+	background-color:transparent;
+	width: 100%;
+	height: auto;
+	padding: 2px;
+}
+
+#rodape p{
+	text-transform: uppercase;
+	font-weight: bold;
+}
