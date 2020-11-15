@@ -1,48 +1,49 @@
-<x-guest-layout>
-    <x-jet-authentication-card>
-        <x-slot name="logo">
-            <x-jet-authentication-card-logo />
-        </x-slot>
-
-        <x-jet-validation-errors class="mb-4" />
-
-        @if (session('status'))
-            <div class="mb-4 font-medium text-sm text-green-600">
-                {{ session('status') }}
-            </div>
-        @endif
-
-        <form method="POST" action="{{ route('login') }}">
+     <!doctype html>
+      <html lang="pt-br">
+        <head>
+       
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+          <link rel="stylesheet" href="{{asset('site/bootstrap.css')}}">
+          <link rel="stylesheet" href="../css/estilo.css"/>
+           <link rel="stylesheet" href="../css/login.css"/>
+      
+          <title>Login - Biotecnologia</title>
+        </head>
+        <body>
+          <div class="container" id="login">
+            <center>
+              <h4>Login - Biotecnologia Unifesp</h4>
+              <img src="../img/logobiotec_transparente.png", width="70%", height="auto"/>
+            </center>
+            <form method="POST" action="{{ route('login') }}">
             @csrf
-
-            <div>
-                <x-jet-label for="email" value="{{ __('Email') }}" />
-                <x-jet-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus />
-            </div>
-
-            <div class="mt-4">
-                <x-jet-label for="password" value="{{ __('Password') }}" />
-                <x-jet-input id="password" class="block mt-1 w-full" type="password" name="password" required autocomplete="current-password" />
-            </div>
-
-            <div class="block mt-4">
-                <label for="remember_me" class="flex items-center">
-                    <input id="remember_me" type="checkbox" class="form-checkbox" name="remember">
-                    <span class="ml-2 text-sm text-gray-600">{{ __('Remember me') }}</span>
-                </label>
-            </div>
-
-            <div class="flex items-center justify-end mt-4">
-                @if (Route::has('password.request'))
-                    <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('password.request') }}">
-                        {{ __('Forgot your password?') }}
-                    </a>
+              <div class="form-group">
+                <label for="email"  value="{{ __('Email') }}">Email:</label>
+                <input id="email" type="email" name="email" :value="old('email')" required autofocus class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu email">  
+                @if($errors->has('email'))
+                    <span class="text-danger">
+                        <strong>{{ $errors->first('email') }}</strong>
+                    </span>
                 @endif
-
-                <x-jet-button class="ml-4">
-                    {{ __('Login') }}
-                </x-jet-button>
             </div>
-        </form>
-    </x-jet-authentication-card>
-</x-guest-layout>
+              <div class="form-group">
+                <label for="password" value="{{ __('Password') }}">Senha:</label>
+                <input id="password" type="password" name="password" required autocomplete="current-password" class="form-control" id="exampleInputPassword1" placeholder="Sua senha">
+                @if($errors->has('password'))
+                    <span class="text-danger">
+                        <strong>{{ $errors->first('password') }}</strong>
+                    </span>
+                @endif
+            </div>
+              <center>
+                <button type="submit" class="btn btn-success">{{ __('Login') }}</button>
+              </center>
+            </form>
+          </div>
+      
+          
+            <script src="{{asset('site/jquery.js')}}"></script>
+            <script src="{{asset('site/bootstrap.js')}}"></script>
+        </body>
+    </html>

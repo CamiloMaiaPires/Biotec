@@ -13,10 +13,7 @@
   </head>
   <body>
     
-    <?php
-      include "menu_adm.php";
-    ?>
-
+  
     <div class="container" id="criar_post">
       <h5>Antes de criar uma postagem, aqui vão as instruções:</h5>
       <u>
