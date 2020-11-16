@@ -36,32 +36,62 @@
 								<div class="carousel-inner" role="listbox">
 									<div class="carousel-item active">
 										<div class="col-md-4">
-											<div class="card card-body"> <img class="img-fluid" src="http://placehold.it/380?text=1"> </div>
+											<div class="card card-body">
+												<img class="img-fluid" src="http://placehold.it/380?text=1">
+												<h5 class="card-title">Card title</h5>
+												<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+												<a href="#" class="btn btn-primary">Go somewhere</a> 
+											</div>
 										</div>
 									</div>
 									<div class="carousel-item">
 										<div class="col-md-4">
-											<div class="card card-body"> <img class="img-fluid" src="http://placehold.it/380?text=2"> </div>
+											<div class="card card-body"> 
+												<img class="img-fluid" src="http://placehold.it/380?text=2"> 
+												<h5 class="card-title">Card title</h5>
+												<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+												<a href="#" class="btn btn-primary">Go somewhere</a>
+											</div>
 										</div>
 									</div>
 									<div class="carousel-item">
 										<div class="col-md-4">
-											<div class="card card-body"> <img class="img-fluid" src="http://placehold.it/380?text=3"> </div>
+											<div class="card card-body">
+												<img class="img-fluid" src="http://placehold.it/380?text=3">
+												<h5 class="card-title">Card title</h5>
+												<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+												<a href="#" class="btn btn-primary">Go somewhere</a>
+											 </div>
 										</div>
 									</div>
 									<div class="carousel-item">
 										<div class="col-md-4">
-											<div class="card card-body"> <img class="img-fluid" src="http://placehold.it/380?text=4"> </div>
+											<div class="card card-body">
+												<img class="img-fluid" src="http://placehold.it/380?text=4">
+												<h5 class="card-title">Card title</h5>
+												<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+												<a href="#" class="btn btn-primary">Go somewhere</a>
+											</div>
 										</div>
 									</div>
 									<div class="carousel-item">
 										<div class="col-md-4">
-											<div class="card card-body"> <img class="img-fluid" src="http://placehold.it/380?text=5"> </div>
+											<div class="card card-body"> 
+												<img class="img-fluid" src="http://placehold.it/380?text=5">
+												<h5 class="card-title">Card title</h5>
+												<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+												<a href="#" class="btn btn-primary">Go somewhere</a>
+											</div>
 										</div>
 									</div>
 									<div class="carousel-item">
 										<div class="col-md-4">
-											<div class="card card-body"> <img class="img-fluid" src="http://placehold.it/380?text=6"> </div>
+											<div class="card card-body"> 
+												<img class="img-fluid" src="http://placehold.it/380?text=6"> 
+												<h5 class="card-title">Card title</h5>
+												<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+												<a href="#" class="btn btn-primary">Go somewhere</a>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -73,7 +103,6 @@
 				</div>
       </div>
 
-      
 			<div style="margin-top: 10px;margin-bottom:10px;" class="col-6 col-md-4"> 
 				<h3><strong> Acontece No ICT </strong></h3> <br>
 				<div class="row" style="margin-left: 15px;">
