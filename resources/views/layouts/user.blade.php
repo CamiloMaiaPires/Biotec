@@ -49,10 +49,6 @@
 		color: aliceblue;
 	}
 	
-	.logo-img {
-		width: 70%;
-		height: auto;
-	}
 	
 	.titulo,
 	.span12,
@@ -68,10 +64,7 @@
 	
 	#shrink {
 		height: 100px;
-		;
 	}
-	
-	.diminuir {}
 	
 	@media (min-width:992px) {
 		.navbar-brand {
@@ -81,20 +74,26 @@
 			height: 100px;
 		}
 	}
-	
-	@media(max-width:990px;) {
-		#teste {
-			visibility: hidden;
-		}
-	}
-	
+
 	.navbar-brand-middle {
 		transform: translateX(-50%);
 		left: 50%;
 		position: absolute;
 		width: 200px;
-		/* no height needed ... image will resize automagically */
+		
 	}
+
+	#img {
+		width: 70%;
+		height: auto;
+	}
+
+	@media only screen and (max-width: 995px) {
+  	#img {
+    	width: 40px;
+		height: auto;
+  	}
+}
 
 	</style>
 	<title>Biotecnologia - UNIFESP</title>
@@ -114,13 +113,12 @@
 			<h1 class="titulo" style="display: inline">Biotecnologia</h1> 
 		</div>
 		<div class="d-block d-sm-none" style="text-align: center">
-			<h1 class="titulo" style="display: inline">Biotecnologia</h1> 
+			<h2 class="titulo" style="display: inline">Biotecnologia</h2> 
 		</div>
 	</div>
 	
 	<nav id="teste" class="navbar sticky-top  navbar-expand-lg navbar-light bg-light" style="margin-top: 10px;;">
-		<a class="navbar-brand" id="logo" href="#"> <img class="logo-img d-none d-lg-block" src="../img/Logo_biotec.png" height="95" /> </a>
-		<a class="navbar-brand2 d-none d-sm-block d-md-block d-lg-none" href="#"> <img src="../img/Logo_biotec.png" height="95" /> </a>
+		<a class="navbar-brand" id="logo" href="#"> <img class="logo-img" id="img" src="../img/Logo_biotec.png"/> </a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav mr-auto">
@@ -163,12 +161,12 @@
 		<div class="span12" style="text-align: left;">
 			<div class="container" style="margin-top: 15px;">
 				<div class="row">
-					<div class="col-sm">
+					<div class="col-sm"  style="margin-top:30px;">
 						<h4>links Rápidos</h4> <a href="" target="_blank" class="link_footer">Vagas e Empregos</a>
 						<br> <a href="" target="_blank" class="link_footer">Mapa</a>
 						<br> <a href="" target="_blank" class="link_footer">Contato</a>
 						<br> </div>
-					<div class="col-sm" style="margin-top:20px;">
+					<div class="col-sm" style="margin-top:30px;">
 						<h4>Informações sobre</h4> <a href="" target="_blank" class="link_footer">UNIFESP</a>
 						<br> <a href="" target="_blank" class="link_footer">UNIFESP SJC</a>
 						<br> <a href="" target="_blank" class="link_footer">Como entrar em biotecnologia</a>
@@ -205,7 +203,8 @@
 	<script>
 
 	$(window).scroll(function() {
-
+		if($(window).width() > 971){
+		
 		if($(document).scrollTop() > 153) {
 			$("#logo").hide("slow");
 			delay(500);
@@ -214,8 +213,8 @@
 			$("#logo").show("slow");
 			$("#logo").removeClass("navbar-brand-middle");
 		}
+		}
 	});
-
 
 	$('#recipeCarousel').carousel({
 		interval: 10000
