@@ -41,9 +41,7 @@
 		font-family: 'Roboto', sans-serif;
 	}
 	
-	.slide {
-		height: 500px;
-	}
+	
 	
 	.titulo {
 		color: aliceblue;
