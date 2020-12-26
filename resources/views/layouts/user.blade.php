@@ -93,6 +93,11 @@
   	}
 }
 
+.card-title{
+	margin-top: 10px;
+}
+
+
 	</style>
 	<title>Biotecnologia - UNIFESP</title>
 </head>
@@ -150,8 +155,8 @@
 
 	@yield('content')
 	
-	<div class="container-fluid" style="background: rgb(201, 189, 174) ; padding:10px;">
-		<h3 style="display: inline; font-size:1.5rem;"><b>CONHEÇA E CURTA NOSSAS PÁGINAS</b></h3><i style="margin-top:10px;margin-bottom:10px;font-size:3em; margin-left:10px;" class="fab fa-facebook"></i> <i style="margin-top:10px;font-size:3em;margin-left:5px;margin-bottom:10px;" class="fab fa-instagram"></i>
+	<div class="container-fluid" style="background: #717171 ; padding:10px;">
+		<h3 style="display: inline; font-size:1.1rem;"><b>CONHEÇA E CURTA NOSSAS PÁGINAS</b></h3><i style="margin-top:10px;margin-bottom:10px;font-size:1.9em; margin-left:10px;" class="fab fa-facebook"></i> <i style="margin-top:10px;font-size:1.9em;margin-left:5px;margin-bottom:10px;" class="fab fa-instagram"></i>
 	</div>
 
 
@@ -233,6 +238,8 @@
 			next.children(':first-child').clone().appendTo($(this));
 		}
 	});
+
+	
 	</script>
 </body>
 </html>
