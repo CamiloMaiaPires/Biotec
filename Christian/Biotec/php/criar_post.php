@@ -8,12 +8,16 @@
     <link rel="sortcut icon" href="../img/logobiotec_transparente.ico" type="image/x-icon"/>;
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../css/estilo.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 
     <title>Criar Post</title>
   </head>
   <body>
     
-  
+    <?php
+      include "menu_adm.php";
+    ?>
+
     <div class="container" id="criar_post">
       <h5>Antes de criar uma postagem, aqui vão as instruções:</h5>
       <u>
@@ -23,7 +27,7 @@
       </u>
 
       <form>
-        <h4>Post:</h4>
+        <h4><i class="fas fa-pen-square"></i> Post:</h4>
         <div class="row">
           <div class="col">
             <label>Título</label>

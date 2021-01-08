@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="../css/estilo.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 
-    <title>Cadastrar Adm</title>
+    <title>Adicionar Professor</title>
   </head>
   <body>
     
@@ -18,18 +18,43 @@
       include "menu_adm.php";
     ?>
 
-    <div class="container" id="criar_post">
-      
+    <div class="container" id="criar_professor">
+
       <form>
-        <h4><i class="fas fa-user-shield"></i> Administrador:</h4>
+        <h4><i class="fas fa-portrait"></i> Professor:</h4>
         <div class="row">
           <div class="col">
             <label>Nome:</label>
-            <input type="text" class="form-control is-valid" placeholder="Nome do Adm">
+            <input type="text" class="form-control is-valid" placeholder="Nome do Professor">
           </div>
         </div>
         <br/>
-        <label>Foto (Opcional):</label>
+        <div class="row">
+          <div class="col">
+            <label>Área de Atuação:</label>
+            <input type="text" class="form-control is-valid" placeholder="Área de Atuação">
+          </div>
+        </div>
+        <br/>
+        <div class="row">
+          <div class="col">
+            <label>Laboratório:</label>
+            <input type="text" class="form-control is-valid" placeholder="Laboratório">
+          </div>
+        </div>
+        <br/>
+        <div class="row">
+          <div class="col">
+            <label>Link para o Lattes:</label>
+            <input type="text" class="form-control is-valid" placeholder="Lattes">
+          </div>
+        </div>
+        <br/>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Conteúdo:</label>
+          <textarea class="form-control is-valid" id="exampleFormControlTextarea1" rows="5"></textarea>
+        </div>
+        <label>Foto do Perfil:</label>
         <div class="custom-file">
           <input type="file" class="custom-file-input is-valid" id="validatedCustomFile" required>
           <label class="custom-file-label" for="validatedCustomFile">Escolher arquivo</label>

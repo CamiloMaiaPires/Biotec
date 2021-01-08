@@ -27,7 +27,7 @@
             <a class="nav-link" href="criar_post.php">Criar Post</a>
           </li>
            <li class="nav-item">
-            <a class="nav-link" href="adicionar_prof.php">Adicionar Professor</a>
+            <a class="nav-link" href="adicionar_professor.php">Adicionar Professor</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="cadastrar_adm.php">Cadastrar Adm</a>

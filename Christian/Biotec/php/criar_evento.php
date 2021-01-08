@@ -8,6 +8,7 @@
     <link rel="sortcut icon" href="../img/logobiotec_transparente.ico" type="image/x-icon"/>;
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../css/estilo.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 
     <title>Criar Evento</title>
   </head>
@@ -18,19 +19,19 @@
     ?>
 
     <div class="container" id="criar_post">
-      <h5>Antes de criar uma postagem, aqui vão as instruções:</h5>
+      <h5>Antes de criar um evento, aqui vão as instruções:</h5>
       <u>
         <li>Colocar um titulo;</li>
-        <li>Colocar uma sinopse do post, essa sinopse irá aparecer em outras páginas do site;</li>
+        <li>Colocar uma sinopse do evento, essa sinopse irá aparecer em outras páginas do site;</li>
         <li>Colocar apenas uma foto.</li>
       </u>
 
       <form>
-        <h4>Post:</h4>
+        <h4><i class="far fa-calendar-alt"></i> Evento:</h4>
         <div class="row">
           <div class="col">
             <label>Título</label>
-            <input type="text" class="form-control is-valid" placeholder="Título do Post">
+            <input type="text" class="form-control is-valid" placeholder="Título do Evento">
           </div>
         </div>
         <br/>
@@ -42,7 +43,7 @@
         </div>
         <br/>
         <div class="form-group">
-          <label for="exampleFormControlTextarea1">Texto do post:</label>
+          <label for="exampleFormControlTextarea1">Descrição do evento:</label>
           <textarea class="form-control is-valid" id="exampleFormControlTextarea1" rows="5"></textarea>
         </div>
         <label>Imagem:</label>
